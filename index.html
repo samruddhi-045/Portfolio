@@ -1,0 +1,428 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Samruddhi Barahate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: left-aligned editorial hero, then a three-column work board (kanban-style, like the Power-Ups she builds), then a dated experience list, grouped skills and education. */
+:root {
+  --bg: #EBEFF4;
+  --col: #DCE3EC;
+  --surface: #FFFFFF;
+  --ink: #162033;
+  --ink-2: #4A566B;
+  --line: #CBD4E0;
+  --accent: #0B7A70;
+  --accent-ink: #FFFFFF;
+  --c-blue: #2F6FD0;
+  --c-green: #238A55;
+  --c-violet: #7451CC;
+  --c-amber: #C28514;
+  --c-rose: #C8466A;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1522;
+    --col: #141D2F;
+    --surface: #1B2740;
+    --ink: #E7ECF4;
+    --ink-2: #A5B0C4;
+    --line: #2B3955;
+    --accent: #3CC4B4;
+    --accent-ink: #06211E;
+    --c-blue: #6A9BF0;
+    --c-green: #4DBB82;
+    --c-violet: #A088F0;
+    --c-amber: #E0A83A;
+    --c-rose: #E8809C;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1522;
+  --col: #141D2F;
+  --surface: #1B2740;
+  --ink: #E7ECF4;
+  --ink-2: #A5B0C4;
+  --line: #2B3955;
+  --accent: #3CC4B4;
+  --accent-ink: #06211E;
+  --c-blue: #6A9BF0;
+  --c-green: #4DBB82;
+  --c-violet: #A088F0;
+  --c-amber: #E0A83A;
+  --c-rose: #E8809C;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.6 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1120px; margin: 0 auto; }
+
+/* header */
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding-block: 20px; }
+.top .mark { font: 700 1.05rem var(--font-display); text-decoration: none; }
+.top nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.top nav a { text-decoration: none; color: var(--ink-2); font-size: .95rem; padding-block: 4px; }
+.top nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+/* hero */
+.hero { padding-block: 48px 40px; }
+.hero h1 { font: 800 clamp(2.75rem, 8vw, 5.25rem)/1 var(--font-display); letter-spacing: -0.025em; margin: 0 0 20px; text-wrap: balance; }
+.hero .role { font: 500 clamp(1.15rem, 2.6vw, 1.5rem)/1.3 var(--font-display); color: var(--accent); margin: 0 0 20px; }
+.hero .lede { max-width: 62ch; color: var(--ink-2); font-size: 1.08rem; margin: 0 0 28px; }
+.hero .lede strong { color: var(--ink); font-weight: 600; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 8px; font: 600 .95rem var(--font-body); text-decoration: none; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+.btn:hover { border-color: var(--ink-2); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.08); }
+
+/* sections */
+section { padding-block: 48px; }
+.sec-head { margin-bottom: 24px; }
+h2 { font: 700 clamp(1.6rem, 3.4vw, 2.1rem)/1.15 var(--font-display); letter-spacing: -0.01em; margin: 0 0 6px; text-wrap: balance; }
+.sec-head p { margin: 0; color: var(--ink-2); max-width: 62ch; }
+
+/* work board */
+.board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: start; }
+.col { background: var(--col); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.col h3 { font: 700 1rem var(--font-display); margin: 2px 4px 4px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.card summary { list-style: none; cursor: pointer; padding: 12px 40px 12px 14px; position: relative; display: flex; flex-direction: column; gap: 6px; }
+.card summary::-webkit-details-marker { display: none; }
+.card summary::after { content: ""; position: absolute; right: 16px; top: 18px; width: 8px; height: 8px; border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2); transform: rotate(45deg); transition: transform .15s; }
+.card[open] summary::after { transform: rotate(-135deg); top: 21px; }
+.card .t { font-weight: 600; line-height: 1.3; }
+.card .d { color: var(--ink-2); font-size: .92rem; line-height: 1.45; }
+.card ul { margin: 0; padding: 0 14px 14px 32px; color: var(--ink-2); font-size: .92rem; display: flex; flex-direction: column; gap: 6px; }
+.card .links { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0 14px 14px; font-size: .92rem; font-weight: 600; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 2px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; font-size: .8rem; color: var(--ink-2); }
+.tag::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--c, var(--ink-2)); flex: none; }
+.blue { --c: var(--c-blue); } .green { --c: var(--c-green); } .violet { --c: var(--c-violet); } .amber { --c: var(--c-amber); } .rose { --c: var(--c-rose); }
+
+/* experience */
+.job { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 8px 32px; padding-block: 24px; border-top: 1px solid var(--line); }
+.job:last-child { border-bottom: 1px solid var(--line); }
+.job .when { color: var(--ink-2); font-size: .95rem; font-variant-numeric: tabular-nums; }
+.job h3 { font: 700 1.2rem var(--font-display); margin: 0 0 2px; }
+.job .where { color: var(--accent); font-weight: 600; font-size: .95rem; margin: 0 0 12px; }
+.job ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; max-width: 68ch; color: var(--ink-2); }
+
+/* skills */
+.skills { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 14px 32px; margin: 0; }
+.skills dt { font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.skills dt::before { content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--c, var(--ink-2)); flex: none; }
+.skills dd { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; min-width: 0; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 2px 10px; font-size: .9rem; }
+
+/* education */
+.edu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.edu article { border-top: 2px solid var(--ink); padding-top: 12px; min-width: 0; }
+.edu h3 { font: 700 1.05rem/1.3 var(--font-display); margin: 0 0 4px; }
+.edu p { margin: 0; color: var(--ink-2); font-size: .94rem; }
+.edu .score { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* contact */
+.contact { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+.email { font: 700 clamp(1.2rem, 3.6vw, 1.9rem) var(--font-display); letter-spacing: -0.01em; overflow-wrap: anywhere; }
+footer { color: var(--ink-2); font-size: .88rem; padding-top: 24px; border-top: 1px solid var(--line); }
+
+@media (max-width: 900px) {
+  .board { grid-template-columns: minmax(0, 1fr); }
+  .edu { grid-template-columns: minmax(0, 1fr); }
+  .job, .skills { grid-template-columns: minmax(0, 1fr); }
+  .skills { gap: 6px 0; }
+  .skills dd { margin-bottom: 12px; }
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#top">Samruddhi Barahate</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Samruddhi Barahate</h1>
+      <p class="role">MERN stack developer who builds Trello Power-Ups</p>
+      <p class="lede">I build web apps with MongoDB, Express, React and Node. In the last 11 months I have built <strong>5+ Power-Ups for the Trello Marketplace</strong>, including a bulk attachment downloader used by <strong>300+ people</strong>, and added subscription payments with a free trial. I am now working on application development. Based in Pune, Maharashtra.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+        <a class="btn" data-link="github" hidden>GitHub</a>
+        <a class="btn" data-link="linkedin" hidden>LinkedIn</a>
+      </div>
+    </div>
+
+    <section id="work">
+      <div class="sec-head">
+        <h2>Work</h2>
+        <p>Tap a card to see what it does. The colored squares match the skill groups further down.</p>
+      </div>
+      <div class="board">
+        <div class="col">
+          <h3>Trello Power-Ups</h3>
+          <details class="card">
+            <summary>
+              <span class="t">Bulk Attachment Downloader</span>
+              <span class="d">Download every file on a card in one click.</span>
+              <span class="tags"><span class="tag blue">React.js</span><span class="tag amber">Trello REST API</span></span>
+            </summary>
+            <ul>
+              <li>Built from scratch on the Trello REST API.</li>
+              <li>Adopted by 300+ users.</li>
+            </ul>
+          </details>
+          <details class="card">
+            <summary>
+              <span class="t">Cardlytics</span>
+              <span class="d">Card statistics across boards and lists.</span>
+              <span class="tags"><span class="tag blue">React.js</span><span class="tag amber">Trello Power-Up SDK</span></span>
+            </summary>
+            <ul>
+              <li>Tracks assigned, due this week, overdue, unassigned and labeled cards.</li>
+              <li>Customizable stat cards.</li>
+            </ul>
+          </details>
+          <details class="card">
+            <summary>
+              <span class="t">Progress</span>
+              <span class="d">Time and progress tracking for cards.</span>
+              <span class="tags"><span class="tag blue">React.js</span><span class="tag amber">Trello Power-Up SDK</span></span>
+            </summary>
+            <ul>
+              <li>Progress bars, ETAs and a focus mode.</li>
+              <li>Reports on time and progress.</li>
+            </ul>
+          </details>
+          <details class="card">
+            <summary>
+              <span class="t">Subscription billing</span>
+              <span class="d">Paid plans with a free trial, shared across the Power-Ups.</span>
+              <span class="tags"><span class="tag amber">Dodo Payments</span><span class="tag rose">Vercel</span></span>
+            </summary>
+            <ul>
+              <li>Integrated end to end with Dodo Payments.</li>
+              <li>Owned deployments and environment configuration on Vercel for production releases.</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="col">
+          <h3>Full-stack projects</h3>
+          <details class="card">
+            <summary>
+              <span class="t">Real-Time Voice Chat</span>
+              <span class="d">A voice chat application that works in real time.</span>
+            </summary>
+            <ul>
+              <li>Separate client and server code in one repository.</li>
+            </ul>
+            <div class="links">
+              <a data-link="voiceChatRepo" hidden>GitHub</a>
+            </div>
+          </details>
+          <details class="card">
+            <summary>
+              <span class="t">Tourism Management System</span>
+              <span class="d">Tour listings, booking management and user accounts.</span>
+              <span class="tags"><span class="tag violet">MongoDB</span><span class="tag green">Express.js</span><span class="tag blue">React.js</span><span class="tag green">Node.js</span><span class="tag green">JWT</span><span class="tag rose">Vercel</span></span>
+            </summary>
+            <ul>
+              <li>REST APIs for tours, users and bookings, with structured error handling and input validation.</li>
+              <li>JWT login and registration, with Mongoose schemas in MongoDB.</li>
+              <li>Deployed on Vercel with environment-based configuration.</li>
+            </ul>
+            <div class="links">
+              <a data-link="tourismRepo" hidden>GitHub</a>
+              <a data-link="tourismDemo" hidden>Live demo</a>
+            </div>
+          </details>
+          <details class="card">
+            <summary>
+              <span class="t">Applicant Tracking System</span>
+              <span class="d">A job portal connecting candidates with employers.</span>
+              <span class="tags"><span class="tag violet">MongoDB</span><span class="tag green">Express.js</span><span class="tag blue">React.js</span><span class="tag green">Node.js</span><span class="tag green">JWT</span></span>
+            </summary>
+            <ul>
+              <li>Endpoints for job posting, applications and status tracking.</li>
+              <li>Role-based access for candidates and employers, each with their own dashboard.</li>
+              <li>Indexed MongoDB queries for fast job listings.</li>
+            </ul>
+          </details>
+        </div>
+
+        <div class="col">
+          <h3>Research</h3>
+          <details class="card">
+            <summary>
+              <span class="t">Cross-Platform Secure Data Sharing</span>
+              <span class="d">Published research paper.</span>
+            </summary>
+            <ul>
+              <li>Covers data security and compatibility across different systems.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="sec-head"><h2>Experience</h2></div>
+      <div>
+        <article class="job">
+          <div class="when">May 2026 to present</div>
+          <div>
+            <h3>MERN Stack Developer Intern</h3>
+            <p class="where">Explified (Techexplified), Remote</p>
+            <ul>
+              <li>Currently working on application development.</li>
+              <li>Built 5+ Power-Ups for the Trello (Atlassian) Marketplace with React.js, Node.js and REST APIs.</li>
+              <li>Built the bulk attachment downloader from scratch, now used by 300+ people.</li>
+              <li>Built Cardlytics and Progress, and added subscription payments with a free trial using Dodo Payments.</li>
+              <li>Delivered features in Agile sprints with the senior development team and owned production deployments on Vercel.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <div class="when">Apr 2025 to Sep 2025</div>
+          <div>
+            <h3>Software Developer Intern</h3>
+            <p class="where">Cosmos Digital, Maharashtra</p>
+            <ul>
+              <li>Developed and maintained features across frontend and backend modules, guided by senior developers.</li>
+              <li>Debugged existing codebases, which improved stability and cut recurring defects.</li>
+              <li>Took part in sprint planning, daily stand-ups and peer code reviews over a 6-month Agile engagement.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="sec-head"><h2>Skills</h2></div>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd><span class="chip">JavaScript (ES6+)</span><span class="chip">TypeScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">SQL</span></dd>
+        <dt class="blue" style="--c: var(--c-blue)">Frontend</dt>
+        <dd><span class="chip">React.js</span><span class="chip">React Hooks</span><span class="chip">React Router</span><span class="chip">Responsive web design</span></dd>
+        <dt style="--c: var(--c-green)">Backend</dt>
+        <dd><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">RESTful APIs</span><span class="chip">JWT authentication</span><span class="chip">Mongoose ODM</span><span class="chip">Middleware</span><span class="chip">MVC architecture</span></dd>
+        <dt style="--c: var(--c-violet)">Databases</dt>
+        <dd><span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">Schema design</span><span class="chip">CRUD</span><span class="chip">Indexing</span></dd>
+        <dt style="--c: var(--c-amber)">Integrations</dt>
+        <dd><span class="chip">Trello REST API</span><span class="chip">Trello Power-Up SDK</span><span class="chip">Dodo Payments</span><span class="chip">Paddle</span><span class="chip">Webhooks</span></dd>
+        <dt style="--c: var(--c-rose)">Tools</dt>
+        <dd><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span><span class="chip">VS Code</span><span class="chip">Vercel</span><span class="chip">npm</span></dd>
+        <dt>Ways of working</dt>
+        <dd><span class="chip">Agile</span><span class="chip">Scrum</span><span class="chip">Sprint planning</span><span class="chip">Code reviews</span><span class="chip">SDLC</span></dd>
+      </dl>
+    </section>
+
+    <section id="education">
+      <div class="sec-head"><h2>Education</h2></div>
+      <div class="edu">
+        <article>
+          <h3>B.Tech in Information Technology</h3>
+          <p>Prof. Ram Meghe Institute of Technology and Research, Badnera</p>
+          <p>2021 to 2025 · <span class="score">CGPA 8.5 / 10</span></p>
+        </article>
+        <article>
+          <h3>Higher Secondary Certificate</h3>
+          <p>Bajaj College of Science, Wardha</p>
+          <p>2019 to 2021 · <span class="score">87.50%</span></p>
+        </article>
+        <article>
+          <h3>Secondary School Certificate</h3>
+          <p>Lok Vidyalaya, Wardha</p>
+          <p>2018 to 2019 · <span class="score">84.20%</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="sec-head">
+        <h2>Get in touch</h2>
+        <p>I also volunteered at college cultural events, helping organize large-scale activities.</p>
+      </div>
+      <div class="contact">
+        <span class="email" id="email">samruddhibarahate4@gmail.com</span>
+        <button class="btn primary" id="copy" type="button">Copy email</button>
+        <a class="btn" data-link="linkedin" hidden>LinkedIn</a>
+        <a class="btn" data-link="github" hidden>GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>Samruddhi Barahate · Pune, Maharashtra</footer>
+</div>
+
+<script>
+// Add your own links here. Any link left empty stays hidden.
+var LINKS = {
+  github: "https://github.com/samruddhi-045",
+  linkedin: "",
+  tourismRepo: "",
+  tourismDemo: "",
+  voiceChatRepo: "https://github.com/samruddhi-045/real-time-voice-chat"
+};
+
+document.querySelectorAll("[data-link]").forEach(function (el) {
+  var url = LINKS[el.getAttribute("data-link")];
+  if (url) {
+    el.href = url;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+    el.hidden = false;
+  }
+});
+
+var copyBtn = document.getElementById("copy");
+var emailEl = document.getElementById("email");
+copyBtn.addEventListener("click", function () {
+  function done() {
+    copyBtn.textContent = "Copied";
+    setTimeout(function () { copyBtn.textContent = "Copy email"; }, 1800);
+  }
+  function fallback() {
+    var r = document.createRange();
+    r.selectNodeContents(emailEl);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+  }
+  try {
+    navigator.clipboard.writeText(emailEl.textContent.trim()).then(done, fallback);
+  } catch (e) {
+    fallback();
+  }
+});
+</script>
+
+</body></html>
+
